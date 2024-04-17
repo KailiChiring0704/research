@@ -1,0 +1,201 @@
+<html lang="en">
+<head>
+</body>
+    <div class="header">
+        <h1>Make an Order</h1>
+    </div>
+    <div class="header2">
+        <h2>Taro</h2>
+    </div>
+    <div class="taro">
+        <img src="example.png" alt="">
+    </div>
+
+    <div class="return">
+        <h3><a href="3rdpage.html"> Return </a></h3>
+    </div>
+    
+    <div class="bubble">
+        <h4><img src="bubble.png" alt=""></h4>
+    </div>
+    <div class="ordersystem">
+        <div class="container">
+            <div><p>Sugar Level</p></div>
+            <div> <input type="checkbox" id="0%"> <label for="0%">0%</label>  </div>
+            <div> <input type="checkbox" id="25%"> <label for="25%">25%</label> </div>
+            <div> <input type="checkbox" id="50%"> <label for="50%">50%</label> </div>
+            <div> <input type="checkbox" id="75%"> <label for="75%">75%</label> </div>
+            <div> <input type="checkbox" id="100%"> <label for="50%">100%</label> </div>
+
+    <div class="size">
+        <div><p>Size</p></div>
+            <div><input type="checkbox" id="16oz" id="16oz"> <label for="16oz">16oz</label> </div>   
+            <div><input type="checkbox" id="22oz" id="22oz"> <label for="22oz">22oz</label> </div>              
+         </div>            
+    </div>
+    <div class="addons">
+        <div><p>Add-Ons</p></div>
+        <div><input type="checkbox" id="cheese" id="cheese"> <label for="cheese">Creamcheese</label> </div>
+        <div><input type="checkbox" id="pearl" id="p"> <label for="pearl"> <label for="pearl">Pearl</label> </div>
+        <div><input type="checkbox" id="cocojelly" id="cocojelly"> <label for="cocojelly">Coco-Jelly</label> </div>
+        <div><input type="checkbox" id="creampuff" id="creampuff"><label for="creampuff"> Cream-Puff </label> </div>
+
+
+    </div>
+        <div class="addorder">
+            <a href="">Add Order</a>
+        </div>
+
+    <div class="quantityminus">
+        <a href=""><img src="minus.png" alt=""></a>
+    </div>
+
+    <div class="quantityplus">
+        <a href=""><img src="plus.png" alt=""></a>
+    </div>
+
+    <div class="quantitynumber">
+        <p>0</p>
+
+    </div>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    body{
+        position: absolute;
+        background-color: #FFF6DD;
+        
+        
+    }
+    .header{
+        margin: 0;
+        background-color: #996139;
+        border: 2px solid #FFF6DD;
+        margin: 0;
+        padding: 5;
+        position: absolute;
+        transform: translate(240%, -150%);
+        top: 10%;
+        border-radius: 7px;
+        color: #ffffff;
+        border-color: black;
+    }
+    .header2{
+        color: violet;
+        text-decoration: underline ;
+        transform: translate(49%, 1050%);
+    }
+    .ordersystem{
+        transform: translate(35%, -50%);
+    }
+    .size{
+        transform: translate(25%, -220.5%);        
+    }
+    input[type=checkbox] {
+       margin: 10px;
+        background-color: #ffffff;
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+    }
+    .taro img{
+        position: absolute;
+        width: 250px;
+        transform: translate(225%, 30%);
+    }
+    .line1 hr{
+        transform: translate(20%, 15000%);
+        width: 500%;
+    }
+    .checkbox1{
+        transform: translate(50%, 50%)
+    }
+    .line2 hr{
+        transform: translate(20%, 30000%);
+        width: 500%;
+    }
+    .return h3{
+        margin: -5px 0 20px 5px;
+        background-color: #ffffff;
+        border: 2px solid black;
+        margin: 0;
+        padding: 5;
+        position: absolute;
+        transform: translate(20%);
+        top: 0%;
+        border-radius: 7px;
+        text-decoration: none;
+    }
+    h3 a{
+        margin: -5px 0 20px 5px;
+        color: #4b4b4b;
+        font-size: x-large;
+        background-color: #ffffff;
+        border: 2px solid black;
+        margin: 0;
+        padding: 5;
+        position: absolute;
+        transform: translate(10%, 20%);
+        border-radius: 7px;
+        text-decoration: none;
+    }
+    #check{
+        margin-right: 6px;
+        pointer-events: none;
+    }
+    .bubble img{
+        width: 100%;
+        transform: translate(0%, 20%);
+        overflow: hidden;
+    }
+    label{
+        font-weight: 500;
+        color: #996139;
+        cursor: pointer;
+    }
+    #check:checked{
+        accent-color: #996139;
+    }
+    #check:checked ~ label {
+        color: #996139;
+    }
+    .addorder{
+        margin: -5px 0 20px 5px;
+        font-size: x-large;
+        background-color: #ffffff;
+        border: 2px solid black;
+        margin: 0;
+        padding: 5;
+        position: absolute;
+        transform: translate(200%, 55%);
+        border-radius: 7px;
+        text-decoration: none;
+    }
+    .addorder a{
+        text-decoration: none;
+        color: black;
+    }
+    .addons{
+        transform: translate(0%, 0%);
+        
+    }
+    .ordersystem p {
+        font-size: large;
+    }
+    .quantityminus img {
+        width: 50px;
+        transform: translate(0%, 50%);
+    }
+    .quantityplus img{
+        width: 50px;
+        transform: translate(250%, -50%);
+    }
+    .quantitynumber p{
+        transform: translate(5.6%, -145%);
+        font-size:40px;
+    }
+</style>
+</html>

@@ -1,0 +1,205 @@
+<html lang="en">
+    <head>
+        <title>
+            1201PMilktea
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <header>
+       
+        <div class="logo">
+            <img src="title.png" alt="">
+        </div>
+        <div class="minilogo">   
+        <ul class="nav">
+            <li><a href=""> Sign up </a></li>
+            <hr>
+            
+        </ul>
+    </div>  
+</header>
+    </div>      
+
+    <body>
+     <div class="center">
+        <h1>Hi Admin!</h1>
+        
+        <form method="post">
+            <div class="text_field">
+                <input type="text" required>
+                <span></span>
+                <label>Username</label>
+                
+            </div>
+
+            <div class="text_field">
+                <input type="password" required>
+                <span></span>
+                <label>Password</label>
+            </div>
+
+            <div class="pass"> 
+                <input type="submit" value="Log in">
+                </div>
+            </form>
+            </div>
+            <hr class="footer-hr">
+            <div class="footer">
+          </div> 
+          <div class="line1">
+            <hr>
+    </body>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                
+            }
+            body{
+                background-color: rgb(20, 20, 20);
+                height: 0%;
+                background-position: center;
+                width: 70%;
+                background: url("1stpage.png");
+                 
+            }
+            .center{
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 400px;
+              background: rgb(0, 0, 0, 0) ;
+              border-radius: 0px;
+              color: #ffffff;
+              
+            }
+            .title img{
+                position: absolute;
+                width: 80%;
+                transform: translate(-4%, -122.7%);
+            }
+           
+            .center h1{
+                text-align: center;
+                padding: 10 10 20px 0;
+            }
+            .center form{
+                padding: 0 40px;
+                box-sizing: border-box;
+                
+            }
+            form .text_field{
+                position: relative;
+                border-bottom: 2px solid #adadad;
+                margin: 40px 0;
+            }
+            .text_field input{
+                width: 100%;
+                padding: 0 5px;
+                font-size: 16px;
+                border: none;
+                background: none;
+                outline: none;
+            }
+            .text_field label{
+                position: absolute;
+                top:10%;
+                left: 5px;
+                color: #adadad; 
+                transform: translateY(-50%);
+                font-size:  16px;
+                pointer-events: none;
+            }
+            .text_field span::before{
+                content: '';
+                position: absolute;
+                top: 20.9px;
+                width: 0%;
+                height: 2px;
+                left: 0%;
+                background: #ffffff;
+                transition: .5s;
+            }
+            .text_field input:focus ~ label,
+            .text_field input:valid ~ label{
+                top: -5px;
+                color: #ffffff;
+                
+            }
+            .text_field input:focus ~ span::before,
+            .text_field input:valid ~ span::before{
+                width: 100%;
+            }
+            .pass{
+                margin: -5px 0 20px 5px;
+                color: #a6a6a6;
+   
+            }
+            input[type="submit"]{
+                width: 309px;
+                height: 40px;
+                border: 1px solid;
+                border-radius: 7px;
+                font-size: medium;
+                border-color: #ffc962;
+                background-color: rgba(0, 0, 0, 0);
+                color: white;
+                cursor: pointer;
+            }
+            .footer{
+                width:100%;
+                height:38px;
+                background-color: rgba(255, 255, 255, 0.1);
+                display: flex;
+                position: absolute;
+                bottom: 0;
+            }
+            .footer-hr{
+                position: absolute;
+                bottom:38px;
+                width:99.8%;
+            }
+            header img{
+                width: 50px;
+                
+            }
+            header {
+                position: fixed;
+                width: 100%;
+                background-color: rgb(255, 255, 255, 0.1);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                list-style: none;
+            }
+            .line1 hr{
+               
+               transform: translate(0, 2500%);
+               width: 142.6%;
+            }
+             .logo{
+                margin-left: 5%;
+            }
+            header .minilogo li{
+                list-style: none;
+                color: white;
+            }
+            .nav{
+                display: flex;
+                gap: 40px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .minilogo{
+                display: flex;
+                align-items: center;
+                margin-right: 5%;
+            }
+            .nav li a{
+                text-decoration: none;
+                color: white;
+            }
+        </style>
+  
+</html>
